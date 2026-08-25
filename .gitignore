@@ -1,0 +1,8 @@
+# design exploration — kept on disk, not part of the published site
+*.dc.html
+canvas.json
+personal-site-directions.html
+
+# local tooling / os
+.claude/
+.DS_Store
