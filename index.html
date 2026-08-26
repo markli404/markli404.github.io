@@ -229,6 +229,12 @@ ul{padding:0;list-style:none}
   .pub .y{text-align:left;order:-1}
   .entry{grid-template-columns:1fr}
   .entry .when{text-align:left;order:-1}
+  /* 触控目标：这两处在手机上只有 26/27px，够不到 44px 的下限 */
+  .links a{padding-block:12px 13px;min-height:44px;align-items:center}
+  .pub .out{gap:10px}
+  .pub .out a{padding:13px 14px;font-size:11px}
+  /* 段落里的行内链接默认只有一行高，手机上点不准 */
+  .contact a.mail,.foot a{display:inline-block;padding-block:11px;min-height:44px}
   .foot{grid-template-columns:1fr}
   .foot > div:last-child{text-align:left}
 }
@@ -689,6 +695,10 @@ addEventListener('scroll', () => {
 measureName();
 frame();
 addEventListener('resize', () => { measureName(); frame(); });
+// webfont 若在首屏之后才就绪，名字的自然尺寸会变，缓存的起点坐标就失效了
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(() => { measureName(); frame(); });
+}
 </script>
 
 </body>
