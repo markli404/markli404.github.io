@@ -123,8 +123,8 @@ ul{padding:0;list-style:none}
 
 .creed{padding-inline:max(24px,calc((100% - var(--maxw))/2));
   padding-block:clamp(56px,9vh,104px);border-bottom:1px solid var(--bone)}
-.creed p{font-family:var(--serif);font-weight:400;font-size:clamp(26px,3vw,46px);
-  line-height:1.28;color:var(--bone);max-width:30ch;text-wrap:balance}
+.creed p{font-family:var(--serif);font-weight:400;font-size:clamp(21px,2vw,30px);
+  line-height:1.55;color:var(--bone);max-width:68ch;text-wrap:pretty}
 .creed em{font-style:normal;color:var(--amber)}
 
 /* ---- marquee band ---------------------------------------------------- */
@@ -281,7 +281,7 @@ ul{padding:0;list-style:none}
       <span class="line"><span>Yiping <em class="mark" style="font-style:normal">Li</em></span></span>
     </h1></div>
     <p class="hero-sub">I'm a Ph.D. student at UC Merced, advised by Wan Du.
-      I work on <span class="hl">AI algorithms</span>, efficient inference, and AI for science.</p>
+      I work on <span class="hl">LLM post-training</span>, efficient inference, and AI for science.</p>
     <div class="latest meta" aria-label="Recent papers">
       <span>New on arXiv &middot; Oct 2026</span>
       <a href="https://arxiv.org/abs/2610.19145" target="_blank" rel="noopener">Demystifying OPD &nearr;</a>
@@ -291,7 +291,7 @@ ul{padding:0;list-style:none}
     <div class="hero-foot meta">
       <span><span class="dot"></span>&nbsp;Open to 2027 internships</span>
       <span><span class="k">ADVISOR</span> &nbsp;Wan Du</span>
-      <span><span class="k">FOCUS</span> &nbsp;Algorithms &middot; Efficient inference &middot; AI for science</span>
+      <span><span class="k">FOCUS</span> &nbsp;LLM post-training &middot; Efficient inference &middot; AI for science</span>
       <span><span class="k">PREVIOUSLY</span> &nbsp;UIUC &middot; UW</span>
     </div>
   </section>
@@ -300,10 +300,9 @@ ul{padding:0;list-style:none}
     <div>
       <div class="meta label rv">/ RESEARCH</div>
       <p class="rv" style="--i:1"><strong>Algorithms.</strong> How can AI become more capable? I study LLM
-        post-training and multi-agent systems, including how models learn from teachers and how agents work together.</p>
+        post-training and multi-agent systems.</p>
       <p class="rv" style="--i:2"><strong>Efficient inference.</strong> How can we run AI faster and at lower cost?
-        I work on sampling-driven GPU&ndash;memory co-simulation and chip design exploration,
-        alongside compression of the KV caches passed between agents.</p>
+        I work on AI hardware simulation and KV-cache compression for multi-agent systems.</p>
       <p class="rv" style="--i:3"><strong>AI for science.</strong> How can AI help solve scientific problems?
         My current work explores LLMs for quantum computing, including circuit synthesis and quantum reasoning.</p>
     </div>
@@ -320,7 +319,11 @@ ul{padding:0;list-style:none}
   </section>
 
   <section class="creed">
-    <p class="rv"><em>More capable AI.</em><br>Faster, cheaper inference.<br>New ways to solve scientific problems.</p>
+    <p class="rv">The value of AI depends on model capabilities, deployment constraints, and how it is used.
+      Research across algorithms, inference, and scientific applications connects these concerns and brings
+      different perspectives to the same problem. Working across these areas helps sharpen research judgment
+      and identify questions worth pursuing. Even a highly capable model can fall short when its use does not
+      fit the problem.</p>
   </section>
 
   <div class="band" aria-hidden="true">
@@ -347,7 +350,7 @@ ul{padding:0;list-style:none}
           <div class="idx meta"><span class="n">01</span><span>New on arXiv</span></div>
           <h3>Demystifying On-Policy Distillation: Where Does the Teacher's Advantage Live?</h3>
           <p class="authors"><span class="me">Li, Y.</span>, Zhao, F., Hou, Z., An, Z., &amp; Du, W.</p>
-          <p class="venue">arXiv preprint &middot; October 2026</p>
+          <p class="venue">Under review, ACL ARR &middot; arXiv, October 2026</p>
           <p class="note">We study OPD from a knowledge-distillation perspective: which teacher corrections help a student reason better? By changing tokens while keeping model weights fixed, we find that the teacher's advantage accumulates across many corrections, and that choosing where to intervene matters.</p>
           <div class="out">
             <a href="https://arxiv.org/abs/2610.19145" target="_blank" rel="noopener">arXiv</a>
@@ -362,7 +365,7 @@ ul{padding:0;list-style:none}
           <div class="idx meta"><span class="n">02</span><span>New on arXiv</span></div>
           <h3>Sanzaru: Benchmarking Protocol Formation under Epistemic &amp; Communication Asymmetry</h3>
           <p class="authors"><span class="me">Li, Y.</span>, An, Z., &amp; Du, W.</p>
-          <p class="venue">arXiv preprint &middot; October 2026</p>
+          <p class="venue">Under review, ICLR 2027 &middot; arXiv, October 2026</p>
           <p class="note">Can agents work together when they cannot all see, hear, or speak? SANZARU tests this with 120 cooperative bomb-defusal puzzles. Across seven models, about 60% of team failures stem from communication.</p>
           <div class="out">
             <a href="https://arxiv.org/abs/2610.15163" target="_blank" rel="noopener">arXiv</a>
@@ -507,10 +510,9 @@ ul{padding:0;list-style:none}
       <article class="entry rv">
         <div>
           <h3>Efficient Inference</h3>
-          <p class="org">GPU&ndash;memory co-simulation, chip design exploration, and KV-cache compression</p>
+          <p class="org">AI Hardware Simulation &middot; KV-Cache Compression</p>
           <ul>
-            <li><strong>GPU&ndash;memory co-simulation.</strong> I am working on sampling-driven co-simulation
-              of GPUs and memory systems for chip design exploration.</li>
+            <li><strong>AI Hardware Simulation.</strong> Sampling-driven GPU&ndash;memory co-simulation for chip design.</li>
             <li><strong>Orthogonal BackFill (OBF).</strong> I developed a method to recover complementary
               information from discarded KV values and fold it into the cache passed to the next agent, without
               increasing the retained cache size.</li>
@@ -676,7 +678,7 @@ ul{padding:0;list-style:none}
   <section class="contact" id="contact">
     <h2 class="display rv">Get in touch</h2>
     <div class="draw" style="height:1px;background:var(--bone);margin-top:32px"></div>
-    <p class="sub rv" style="--i:1">I'm always happy to talk about AI algorithms, efficient inference, and AI for science.
+    <p class="sub rv" style="--i:1">I'm always happy to talk about LLM post-training, efficient inference, and AI for science.
       Feel free to reach out if you work on related questions or would like to collaborate.</p>
     <p class="sub mailline rv" style="--i:2"><a class="mail" href="mailto:yipingli@ucmerced.edu">yipingli@ucmerced.edu</a></p>
   </section>
