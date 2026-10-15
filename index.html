@@ -281,7 +281,7 @@ ul{padding:0;list-style:none}
       <span class="line"><span>Yiping <em class="mark" style="font-style:normal">Li</em></span></span>
     </h1></div>
     <p class="hero-sub">I'm a Ph.D. student at UC Merced, advised by Wan Du.
-      My research focuses on <span class="hl">LLM post-training</span>, multi-agent systems, and efficient inference.</p>
+      I work on <span class="hl">AI algorithms</span>, efficient inference, and AI for science.</p>
     <div class="latest meta" aria-label="Recent papers">
       <span>New on arXiv &middot; Oct 2026</span>
       <a href="https://arxiv.org/abs/2610.19145" target="_blank" rel="noopener">Demystifying OPD &nearr;</a>
@@ -291,7 +291,7 @@ ul{padding:0;list-style:none}
     <div class="hero-foot meta">
       <span><span class="dot"></span>&nbsp;Open to 2027 internships</span>
       <span><span class="k">ADVISOR</span> &nbsp;Wan Du</span>
-      <span><span class="k">FOCUS</span> &nbsp;On-policy distillation &middot; RL post-training &middot; multi-agent LLM systems</span>
+      <span><span class="k">FOCUS</span> &nbsp;Algorithms &middot; Efficient inference &middot; AI for science</span>
       <span><span class="k">PREVIOUSLY</span> &nbsp;UIUC &middot; UW</span>
     </div>
   </section>
@@ -299,14 +299,12 @@ ul{padding:0;list-style:none}
   <section class="two" id="about">
     <div>
       <div class="meta label rv">/ RESEARCH</div>
-      <p class="rv" style="--i:1">My current work on <strong>on-policy distillation</strong> examines where a teacher
-        model improves a student's reasoning, and whether weaker teachers can still provide useful supervision.</p>
-      <p class="rv" style="--i:2">I also study <strong>multi-agent coordination</strong> when agents have different
-        information and limited ways to communicate. On the efficiency side, I work on compressing the
-        <strong>KV caches</strong> passed between agents while preserving information they need for the task.</p>
-      <p class="rv" style="--i:3">Alongside these projects, I explore <strong>LLMs for quantum computing</strong>.
-        My earlier work focused on communication efficiency, conflicting client gradients and knowledge distillation
-        in federated learning.</p>
+      <p class="rv" style="--i:1"><strong>Algorithms.</strong> How can AI become more capable? I study LLM
+        post-training and multi-agent systems, including how models learn from teachers and how agents work together.</p>
+      <p class="rv" style="--i:2"><strong>Efficient inference.</strong> How can we run AI faster and at lower cost?
+        I work on AI engine simulation and compressing the KV caches passed between agents.</p>
+      <p class="rv" style="--i:3"><strong>AI for science.</strong> How can AI help solve scientific problems?
+        My current work explores LLMs for quantum computing, including circuit synthesis and quantum reasoning.</p>
     </div>
     <div>
       <div class="meta label rv">/ ELSEWHERE</div>
@@ -321,7 +319,7 @@ ul{padding:0;list-style:none}
   </section>
 
   <section class="creed">
-    <p class="rv"><em>Imperfect action</em> is better than perfect inaction.</p>
+    <p class="rv"><em>More capable AI.</em><br>Faster, cheaper inference.<br>New ways to solve scientific problems.</p>
   </section>
 
   <div class="band" aria-hidden="true">
@@ -483,7 +481,7 @@ ul{padding:0;list-style:none}
       <div class="rail-inner">
         <div class="meta count rv">2021 &mdash; NOW</div>
         <h2 class="rv" style="--i:1">Research</h2>
-        <p class="rv" style="--i:2">I work with Wan Du at UC Merced. Previously, I worked remotely with Yuchao Zhang at the
+        <p class="rv" style="--i:2">I am a Research Assistant at UC Merced, advised by Wan Du, since August 2025. Previously, I worked remotely with Yuchao Zhang at the
           joint laboratory of BUPT and ChuangCache.</p>
       </div>
     </div>
@@ -491,25 +489,46 @@ ul{padding:0;list-style:none}
 
       <article class="entry rv">
         <div>
-          <h3>LLM Post-Training, Multi-Agent Systems &amp; Quantum Circuits</h3>
-          <p class="org">University of California, Merced &mdash; <em>Research Assistant, advised by Dr. Wan Du</em></p>
+          <h3>Algorithms</h3>
+          <p class="org">LLM post-training and multi-agent systems</p>
           <ul>
+            <li><strong>Demystifying OPD.</strong> I study on-policy distillation from a knowledge-distillation
+              perspective, using token-flip experiments to understand where teacher corrections help student reasoning.</li>
+            <li><strong>cOPD.</strong> I contributed to the research motivation and experimental design, exploring
+              whether weaker teachers can provide useful contrastive supervision for on-policy distillation.</li>
+            <li><strong>SANZARU.</strong> I developed a benchmark of 120 bomb-defusal puzzles to test how agents
+              coordinate when they have different information and communication constraints.</li>
+          </ul>
+        </div>
+        <div class="meta when">01 / CAPABILITY</div>
+      </article>
+
+      <article class="entry rv">
+        <div>
+          <h3>Efficient Inference</h3>
+          <p class="org">AI engine simulation and KV-cache compression</p>
+          <ul>
+            <li><strong>AI engine simulation.</strong> I am working on simulation of AI inference engines.</li>
             <li><strong>Orthogonal BackFill (OBF).</strong> I developed a method to recover complementary
               information from discarded KV values and fold it into the cache passed to the next agent, without
               increasing the retained cache size.</li>
-            <li><strong>SANZARU.</strong> I developed a benchmark of 120 bomb-defusal puzzles to test how agents
-              coordinate when they have different information and communication constraints.</li>
-            <li><strong>Demystifying on-policy distillation.</strong> I designed token-flip experiments to test
-              where a teacher improves student reasoning, comparing teacher substitutions with student resampling
-              while keeping model weights fixed.</li>
-            <li><strong>cOPD.</strong> I contributed to the research motivation and experimental design, exploring
-              whether weaker teachers can provide useful contrastive supervision for on-policy distillation.</li>
-            <li><strong>LLMs for quantum computing.</strong> I am investigating encoder-based approaches to
-              fault-tolerant circuit synthesis. I also audit and correct Qiskit QuantumKatas and add paired
+          </ul>
+        </div>
+        <div class="meta when">02 / EFFICIENCY</div>
+      </article>
+
+      <article class="entry rv">
+        <div>
+          <h3>AI for Science</h3>
+          <p class="org">LLMs for quantum computing</p>
+          <ul>
+            <li><strong>Circuit synthesis.</strong> I am investigating encoder-based approaches to
+              fault-tolerant quantum circuit synthesis.</li>
+            <li><strong>Quantum reasoning.</strong> I audit and correct Qiskit QuantumKatas and add paired
               multiple-choice tasks to distinguish coding errors from errors in quantum reasoning.</li>
           </ul>
         </div>
-        <div class="meta when">08/2025 &mdash; PRESENT</div>
+        <div class="meta when">03 / SCIENCE</div>
       </article>
 
       <article class="entry rv">
@@ -655,7 +674,7 @@ ul{padding:0;list-style:none}
   <section class="contact" id="contact">
     <h2 class="display rv">Get in touch</h2>
     <div class="draw" style="height:1px;background:var(--bone);margin-top:32px"></div>
-    <p class="sub rv" style="--i:1">I'm always happy to talk about LLM post-training, how agents communicate, and making inference more efficient.
+    <p class="sub rv" style="--i:1">I'm always happy to talk about AI algorithms, efficient inference, and AI for science.
       Feel free to reach out if you work on related questions or would like to collaborate.</p>
     <p class="sub mailline rv" style="--i:2"><a class="mail" href="mailto:yipingli@ucmerced.edu">yipingli@ucmerced.edu</a></p>
   </section>
