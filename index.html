@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Yiping Li</title>
-<meta name="description" content="Yiping Li — PhD student in EECS at UC Merced, studying how knowledge moves and conflicts across neural models: KV-cache compression, distillation, federated learning.">
+<meta name="description" content="Yiping Li — PhD student in EECS at UC Merced. LLM post-training, multi-agent reinforcement learning, efficient inference, and LLMs for quantum computing.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap">
@@ -92,6 +92,10 @@ ul{padding:0;list-style:none}
   opacity:0;transition:opacity .8s var(--ease) .8s}
 .js .hero.in .hero-foot{opacity:1}
 .hero-foot .k{color:var(--muted)}
+
+.latest{display:flex;flex-wrap:wrap;gap:12px 24px;line-height:1.7;border-top:1px solid var(--rule-dim);padding-top:18px}
+.latest > span{color:var(--amber)}
+.latest a{text-decoration:underline;text-underline-offset:4px}
 
 /* ---- generic reveal -------------------------------------------------- */
 .js .rv{opacity:0;transform:translateY(26px);
@@ -276,12 +280,18 @@ ul{padding:0;list-style:none}
     <div class="name-slot"><h1 class="display" id="name">
       <span class="line"><span>Yiping <em class="mark" style="font-style:normal">Li</em></span></span>
     </h1></div>
-    <p class="hero-sub">I study how knowledge is represented inside models, how it moves between them, and
-      where those internal representations <span class="hl">conflict</span>.</p>
+    <p class="hero-sub">I'm a Ph.D. student at UC Merced, advised by Wan Du.
+      My research focuses on <span class="hl">LLM post-training</span>, multi-agent systems, and efficient inference.</p>
+    <div class="latest meta" aria-label="Recent papers">
+      <span>New on arXiv &middot; Oct 2026</span>
+      <a href="https://arxiv.org/abs/2610.19145" target="_blank" rel="noopener">Demystifying OPD &nearr;</a>
+      <a href="https://arxiv.org/abs/2610.15163" target="_blank" rel="noopener">SANZARU &nearr;</a>
+      <a href="https://arxiv.org/abs/2610.14438" target="_blank" rel="noopener">Neither True nor False &nearr;</a>
+    </div>
     <div class="hero-foot meta">
       <span><span class="dot"></span>&nbsp;Open to 2027 internships</span>
       <span><span class="k">ADVISOR</span> &nbsp;Wan Du</span>
-      <span><span class="k">FOCUS</span> &nbsp;LLM systems &middot; KV-cache compression &middot; on-policy distillation</span>
+      <span><span class="k">FOCUS</span> &nbsp;On-policy distillation &middot; RL post-training &middot; multi-agent LLM systems</span>
       <span><span class="k">PREVIOUSLY</span> &nbsp;UIUC &middot; UW</span>
     </div>
   </section>
@@ -289,17 +299,14 @@ ul{padding:0;list-style:none}
   <section class="two" id="about">
     <div>
       <div class="meta label rv">/ RESEARCH</div>
-      <p class="rv" style="--i:1">I study how knowledge is represented inside models, and how it moves and
-        combines across them. The same knowledge takes different carriers in different settings: <strong>gradients</strong>
-        in federated learning, <strong>KV caches</strong> in multi-agent LLM systems, <strong>weights</strong> when
-        specialized models are merged.</p>
-      <p class="rv" style="--i:2">Across all of them the recurring obstacle is the same &mdash; <strong>conflict</strong>,
-        where knowledge from different sources interferes once combined. My work so far spans KV-cache compression for
-        latent multi-agent LLMs, knowledge distillation with curriculum learning, and conflict-aware federated learning
-        under non-IID data.</p>
-      <p class="rv" style="--i:3">I am currently working on cross-family on-policy distillation, where a student must
-        re-express what the teacher holds in its own internal states, and on conflict in model steering, merging and
-        fine-tuning.</p>
+      <p class="rv" style="--i:1">My current work on <strong>on-policy distillation</strong> examines where a teacher
+        model improves a student's reasoning, and whether weaker teachers can still provide useful supervision.</p>
+      <p class="rv" style="--i:2">I also study <strong>multi-agent coordination</strong> when agents have different
+        information and limited ways to communicate. On the efficiency side, I work on compressing the
+        <strong>KV caches</strong> passed between agents while preserving information they need for the task.</p>
+      <p class="rv" style="--i:3">Alongside these projects, I explore <strong>LLMs for quantum computing</strong>.
+        My earlier work focused on communication efficiency, conflicting client gradients and knowledge distillation
+        in federated learning.</p>
     </div>
     <div>
       <div class="meta label rv">/ ELSEWHERE</div>
@@ -319,36 +326,48 @@ ul{padding:0;list-style:none}
 
   <div class="band" aria-hidden="true">
     <div class="band-track">
-      <span>KV-CACHE COMPRESSION</span><span>ON-POLICY DISTILLATION</span><span>RL POST-TRAINING</span><span>LLM INFERENCE EFFICIENCY</span><span>KNOWLEDGE DISTILLATION</span><span>LORA / PEFT</span><span>MODEL MERGING</span><span>FEDERATED LEARNING</span><span>MODEL STEERING</span>
-      <span>KV-CACHE COMPRESSION</span><span>ON-POLICY DISTILLATION</span><span>RL POST-TRAINING</span><span>LLM INFERENCE EFFICIENCY</span><span>KNOWLEDGE DISTILLATION</span><span>LORA / PEFT</span><span>MODEL MERGING</span><span>FEDERATED LEARNING</span><span>MODEL STEERING</span>
-      <span>KV-CACHE COMPRESSION</span><span>ON-POLICY DISTILLATION</span><span>RL POST-TRAINING</span><span>LLM INFERENCE EFFICIENCY</span><span>KNOWLEDGE DISTILLATION</span><span>LORA / PEFT</span><span>MODEL MERGING</span><span>FEDERATED LEARNING</span><span>MODEL STEERING</span>
-      <span>KV-CACHE COMPRESSION</span><span>ON-POLICY DISTILLATION</span><span>RL POST-TRAINING</span><span>LLM INFERENCE EFFICIENCY</span><span>KNOWLEDGE DISTILLATION</span><span>LORA / PEFT</span><span>MODEL MERGING</span><span>FEDERATED LEARNING</span><span>MODEL STEERING</span>
+      <span>ON-POLICY DISTILLATION</span><span>RL POST-TRAINING</span><span>MULTI-AGENT REINFORCEMENT LEARNING</span><span>KV-CACHE COMPRESSION</span><span>LLM INFERENCE EFFICIENCY</span><span>LLM EVALUATION & BENCHMARKING</span><span>KNOWLEDGE DISTILLATION</span><span>LORA / PEFT</span><span>FEDERATED LEARNING</span>
+      <span>ON-POLICY DISTILLATION</span><span>RL POST-TRAINING</span><span>MULTI-AGENT REINFORCEMENT LEARNING</span><span>KV-CACHE COMPRESSION</span><span>LLM INFERENCE EFFICIENCY</span><span>LLM EVALUATION & BENCHMARKING</span><span>KNOWLEDGE DISTILLATION</span><span>LORA / PEFT</span><span>FEDERATED LEARNING</span>
+      <span>ON-POLICY DISTILLATION</span><span>RL POST-TRAINING</span><span>MULTI-AGENT REINFORCEMENT LEARNING</span><span>KV-CACHE COMPRESSION</span><span>LLM INFERENCE EFFICIENCY</span><span>LLM EVALUATION & BENCHMARKING</span><span>KNOWLEDGE DISTILLATION</span><span>LORA / PEFT</span><span>FEDERATED LEARNING</span>
+      <span>ON-POLICY DISTILLATION</span><span>RL POST-TRAINING</span><span>MULTI-AGENT REINFORCEMENT LEARNING</span><span>KV-CACHE COMPRESSION</span><span>LLM INFERENCE EFFICIENCY</span><span>LLM EVALUATION & BENCHMARKING</span><span>KNOWLEDGE DISTILLATION</span><span>LORA / PEFT</span><span>FEDERATED LEARNING</span>
     </div>
   </div>
 
   <section class="rail-sec" id="papers">
     <div class="rail">
       <div class="rail-inner">
-        <div class="meta count rv">01 &mdash; 05</div>
+        <div class="meta count rv">01 &mdash; 09</div>
         <h2 class="rv" style="--i:1">Selected papers</h2>
-        <p class="rv" style="--i:2">Peer-reviewed work and preprints. Author order follows each venue; my own name is
-          highlighted in every list.</p>
+        <p class="rv" style="--i:2">Recent preprints, publications, and manuscripts under review.</p>
       </div>
     </div>
     <div class="stack">
 
       <article class="pub featured rv">
         <div>
-          <div class="idx meta"><span class="n">01</span></div>
-          <h3>When Less Latent Leads to Better Relay: Information-Preserving Compression for Latent Multi-Agent LLM Collaboration</h3>
-          <p class="authors"><span class="me">Li, Y.</span>, An, Z., &amp; Du, W.</p>
-          <p class="venue">Under review, NeurIPS 2026</p>
-          <p class="note">Adapts KV-cache eviction to multi-agent latent communication and introduces Orthogonal
-            BackFill, which injects a low-rank component of the discarded value states back into the retained cache.
-            Compressed relay matches or beats full KV relay on five of nine benchmarks while keeping 9.9&ndash;20.2% of the prompt KV.</p>
+          <div class="idx meta"><span class="n">01</span><span>New on arXiv</span></div>
+          <h3>Demystifying On-Policy Distillation: Where Does the Teacher's Advantage Live?</h3>
+          <p class="authors"><span class="me">Li, Y.</span>, Zhao, F., Hou, Z., An, Z., &amp; Du, W.</p>
+          <p class="venue">arXiv preprint &middot; October 2026</p>
+          <p class="note">We study OPD from a knowledge-distillation perspective: which teacher corrections help a student reason better? By changing tokens while keeping model weights fixed, we find that the teacher's advantage accumulates across many corrections, and that choosing where to intervene matters.</p>
           <div class="out">
-            <a href="https://arxiv.org/abs/2604.13349" target="_blank" rel="noopener">arXiv</a>
-            <a href="https://github.com/markli404/When-Less-Latent-Leads-to-Better-Relay" target="_blank" rel="noopener">Code</a>
+            <a href="https://arxiv.org/abs/2610.19145" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://arxiv.org/pdf/2610.19145" target="_blank" rel="noopener">PDF</a>
+          </div>
+        </div>
+        <div class="meta y">2026</div>
+      </article>
+
+      <article class="pub featured rv">
+        <div>
+          <div class="idx meta"><span class="n">02</span><span>New on arXiv</span></div>
+          <h3>Sanzaru: Benchmarking Protocol Formation under Epistemic &amp; Communication Asymmetry</h3>
+          <p class="authors"><span class="me">Li, Y.</span>, An, Z., &amp; Du, W.</p>
+          <p class="venue">arXiv preprint &middot; October 2026</p>
+          <p class="note">Can agents work together when they cannot all see, hear, or speak? SANZARU tests this with 120 cooperative bomb-defusal puzzles. Across seven models, about 60% of team failures stem from communication.</p>
+          <div class="out">
+            <a href="https://arxiv.org/abs/2610.15163" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://arxiv.org/pdf/2610.15163" target="_blank" rel="noopener">PDF</a>
           </div>
         </div>
         <div class="meta y">2026</div>
@@ -356,12 +375,58 @@ ul{padding:0;list-style:none}
 
       <article class="pub rv">
         <div>
-          <div class="idx meta"><span class="n">02</span></div>
+          <div class="idx meta"><span class="n">03</span><span>New on arXiv</span></div>
+          <h3>Neither True nor False: Do LLMs Represent Truth-Value Gaps in Plural Predication?</h3>
+          <p class="authors">Nakshbandi, D., An, Z., <span class="me">Li, Y.</span>, Giri, S., &amp; Du, W.</p>
+          <p class="venue">arXiv preprint &middot; October 2026</p>
+          <p class="note">Some statements are neither true nor false. We test whether LLMs recognize this in plural descriptions using 1,000 diagnostic examples. Across seven open-weight models, we find a tendency to force these cases into binary judgments.</p>
+          <div class="out">
+            <a href="https://arxiv.org/abs/2610.14438" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://arxiv.org/pdf/2610.14438" target="_blank" rel="noopener">PDF</a>
+          </div>
+        </div>
+        <div class="meta y">2026</div>
+      </article>
+
+      <article class="pub rv">
+        <div>
+          <div class="idx meta"><span class="n">04</span></div>
+          <h3>Compressing KV-Cache Communication in Multi-Agent Systems with Collective Compensation</h3>
+          <p class="authors"><span class="me">Li, Y.</span>, An, Z., &amp; Du, W.</p>
+          <p class="venue">Under review, ICLR 2027</p>
+          <p class="note">Orthogonal BackFill (OBF) compresses the KV cache passed between agents by folding information
+            from discarded values into the retained cache. It reduces per-agent relay volume by approximately
+            4.7&times; compared with full-cache relay. At the same relay budget, OBF outperforms eviction alone in
+            31 of 42 comparisons across seven benchmarks and Qwen3 models from 4B to 14B.</p>
+          <div class="out">
+            <a href="https://arxiv.org/abs/2604.13349" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://github.com/markli404/When-Less-Latent-Leads-to-Better-Relay" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+        <div class="meta y">2027</div>
+      </article>
+
+      <article class="pub rv">
+        <div>
+          <div class="idx meta"><span class="n">05</span></div>
+          <h3>cOPD: Contrastive On-Policy Distillation via Dual-Branch Supervision</h3>
+          <p class="authors">Hou, Z., Zhao, F., <span class="me">Li, Y.</span>, An, Z., &amp; Du, W.</p>
+          <p class="venue">Under review, ICLR 2027</p>
+          <p class="note">Can a weaker teacher still help train a student? cOPD investigates this question through
+            contrastive supervision for on-policy distillation.</p>
+        </div>
+        <div class="meta y">2027</div>
+      </article>
+
+      <article class="pub rv">
+        <div>
+          <div class="idx meta"><span class="n">06</span></div>
           <h3>FedSparse: A Communication-Efficient Federated Learning Framework Based on Sparse Updates</h3>
           <p class="authors">Li, J., Zhang, Y., <span class="me">Li, Y.</span>, Gong, X., &amp; Wang, W.</p>
           <p class="venue">Electronics, 13(24), 5042</p>
-          <p class="note">A Resource Optimization Proximal loss that enforces sparse client updates, cutting
-            communication by up to 24% at near-unchanged accuracy.</p>
+          <p class="note">FedSparse uses historical gradients to identify important parameters and applies stronger
+            sparsity penalties to less important updates. This reduces communication by up to 24% while keeping
+            accuracy nearly unchanged.</p>
           <div class="out"><a href="https://www.mdpi.com/2079-9292/13/24/5042" target="_blank" rel="noopener">Paper</a></div>
         </div>
         <div class="meta y">2024</div>
@@ -369,12 +434,13 @@ ul{padding:0;list-style:none}
 
       <article class="pub rv">
         <div>
-          <div class="idx meta"><span class="n">03</span></div>
+          <div class="idx meta"><span class="n">07</span></div>
           <h3>HybridCom: Improve Federated Learning Efficiency on Unstable Data</h3>
           <p class="authors">Li, J., Zhang, Y., <span class="me">Li, Y.</span>, Gong, X., &amp; Wang, W.</p>
           <p class="venue">IEEE International Conference on Communications (ICC), pp. 2622&ndash;2627</p>
-          <p class="note">Adapts client participation to distribution drift through a hybrid client/server contribution
-            indicator.</p>
+          <p class="note">When a client's data distribution changes, the global model may not yet reflect that change.
+            HybridCom combines local performance and server-side gradient signals to prioritize these clients,
+            improving accuracy by approximately 1.3% over the evaluated baselines.</p>
           <div class="out"><a href="https://ieeexplore.ieee.org/document/10622354" target="_blank" rel="noopener">Paper</a></div>
         </div>
         <div class="meta y">2024</div>
@@ -382,12 +448,14 @@ ul{padding:0;list-style:none}
 
       <article class="pub rv">
         <div>
-          <div class="idx meta"><span class="n">04</span></div>
+          <div class="idx meta"><span class="n">08</span></div>
           <h3>Gradient Calibration for Non-IID Federated Learning</h3>
           <p class="authors">Li, J., Zhang, Y., <span class="me">Li, Y.</span>, Gong, X., &amp; Wang, W.</p>
           <p class="venue">2nd ACM Workshop on Data Privacy and Federated Learning Technologies for Mobile Edge Network, pp. 119&ndash;124</p>
-          <p class="note">Federated Gradient Tailor detects and corrects conflicting client gradients before
-            aggregation &mdash; 5% higher accuracy with 6&times; faster convergence on non-IID data, with a formal convergence proof.</p>
+          <p class="note">Federated Gradient Tailor corrects conflicting client gradients before aggregation. On non-IID
+            MNIST and CIFAR-10, it improves accuracy by 3.2&ndash;5.8 percentage points over FL without gradient
+            calibration and reaches baseline accuracy in 2&ndash;6&times; fewer communication rounds. The paper also
+            provides a convergence proof.</p>
           <div class="out"><a href="https://doi.org/10.1145/3615593.3615721" target="_blank" rel="noopener">Paper</a></div>
         </div>
         <div class="meta y">2023</div>
@@ -395,12 +463,13 @@ ul{padding:0;list-style:none}
 
       <article class="pub rv">
         <div>
-          <div class="idx meta"><span class="n">05</span></div>
+          <div class="idx meta"><span class="n">09</span></div>
           <h3>DCD: A New Framework for Distillation Learning with Dynamic Curriculum</h3>
           <p class="authors">Li, J., Zhang, Y., <span class="me">Li, Y.</span>, Gong, X., &amp; Wang, W.</p>
           <p class="venue">IEEE HPCC/DSS/SmartCity/DependSys, pp. 928&ndash;935</p>
-          <p class="note">A curriculum generator that adapts training batches to teacher&ndash;student interaction,
-            mitigating the harm of heterogeneous sampling during distillation.</p>
+          <p class="note">DCD uses feedback from the teacher and student to adjust the order of training samples during
+            distillation. Compared with random sampling, it improves accuracy by 1.7% on CIFAR-10, 2.5% on CIFAR-100
+            and 1% on CINIC-10.</p>
           <div class="out"><a href="https://ieeexplore.ieee.org/document/10074647" target="_blank" rel="noopener">Paper</a></div>
         </div>
         <div class="meta y">2022</div>
@@ -414,23 +483,30 @@ ul{padding:0;list-style:none}
       <div class="rail-inner">
         <div class="meta count rv">2021 &mdash; NOW</div>
         <h2 class="rv" style="--i:1">Research</h2>
-        <p class="rv" style="--i:2">Two labs. The first four publications came out of BUPT; the current line of work is
-          at UC Merced.</p>
+        <p class="rv" style="--i:2">I work with Wan Du at UC Merced. Previously, I worked remotely with Yuchao Zhang at the
+          joint laboratory of BUPT and ChuangCache.</p>
       </div>
     </div>
     <div class="stack">
 
       <article class="entry rv">
         <div>
-          <h3>Efficient Communication in Latent Multi-Agent LLM Systems</h3>
+          <h3>LLM Post-Training, Multi-Agent Systems &amp; Quantum Circuits</h3>
           <p class="org">University of California, Merced &mdash; <em>Research Assistant, advised by Dr. Wan Du</em></p>
           <ul>
-            <li>Observed that as latent multi-agent LLMs move from text to embeddings to full KV caches, bandwidth grows
-              while information density falls &mdash; so compressing the relayed KV is both necessary and effective.</li>
-            <li>Introduced the first adaptation of <strong>KV-cache eviction</strong> to multi-agent latent
-              communication, with a role decomposition of the relayed cache that makes eviction interpretable.</li>
-            <li>Proposed <strong>Orthogonal BackFill</strong>: inject a low-rank component of the discarded value states,
-              orthogonal to the retained ones, back into the retained KV to recover information lost to hard eviction.</li>
+            <li><strong>Orthogonal BackFill (OBF).</strong> I developed a method to recover complementary
+              information from discarded KV values and fold it into the cache passed to the next agent, without
+              increasing the retained cache size.</li>
+            <li><strong>SANZARU.</strong> I developed a benchmark of 120 bomb-defusal puzzles to test how agents
+              coordinate when they have different information and communication constraints.</li>
+            <li><strong>Demystifying on-policy distillation.</strong> I designed token-flip experiments to test
+              where a teacher improves student reasoning, comparing teacher substitutions with student resampling
+              while keeping model weights fixed.</li>
+            <li><strong>cOPD.</strong> I contributed to the research motivation and experimental design, exploring
+              whether weaker teachers can provide useful contrastive supervision for on-policy distillation.</li>
+            <li><strong>LLMs for quantum computing.</strong> I am investigating encoder-based approaches to
+              fault-tolerant circuit synthesis. I also audit and correct Qiskit QuantumKatas and add paired
+              multiple-choice tasks to distinguish coding errors from errors in quantum reasoning.</li>
           </ul>
         </div>
         <div class="meta when">08/2025 &mdash; PRESENT</div>
@@ -439,16 +515,19 @@ ul{padding:0;list-style:none}
       <article class="entry rv">
         <div>
           <h3>Communication Efficiency &amp; Conflict in Federated Learning</h3>
-          <p class="org">Joint Laboratory of BUPT and ChuangCache &mdash; <em>Research Assistant, advised by Dr. Yuchao Zhang</em></p>
+          <p class="org">Joint Laboratory of BUPT and ChuangCache &mdash; <em>Research Assistant (Remote), advised by Dr. Yuchao Zhang</em></p>
           <ul>
-            <li>Designed the core algorithms, wrote nearly all the code and ran every experiment across four
-              publications; also built the lab's shared FL testing framework that all four projects ran on.</li>
-            <li><strong>FedSparse</strong> &mdash; a Resource Optimization Proximal loss enforcing sparse client updates,
-              plus a backpropagation-time node-pruning scheme, cutting communication up to 24%.</li>
-            <li><strong>Federated Gradient Tailor</strong> &mdash; detects and corrects conflicting client gradients
-              before aggregation; authored the formal convergence proof.</li>
-            <li><strong>DCD</strong> &mdash; dynamic curriculum knowledge distillation, benchmarked against vanilla KD
-              and MEKD across multiple datasets.</li>
+            <li>I designed core algorithms, implemented experiments and built the shared evaluation framework
+              used across our four federated-learning papers.</li>
+            <li><strong>FedSparse.</strong> I designed the Resource Optimization Proximal loss to encourage sparse
+              client updates, using historical gradients to preserve important updates while reducing
+              communication.</li>
+            <li><strong>Federated Gradient Tailor.</strong> I built the method for correcting conflicting client
+              gradients before aggregation and wrote its formal convergence proof.</li>
+            <li><strong>HybridCom.</strong> I developed a client-prioritization method that combines local
+              performance with server-side gradient signals to account for changing data distributions.</li>
+            <li><strong>DCD.</strong> I developed a curriculum that uses teacher and student feedback to adjust
+              the order of training samples during knowledge distillation.</li>
           </ul>
         </div>
         <div class="meta when">08/2021 &mdash; 03/2025</div>
@@ -528,7 +607,7 @@ ul{padding:0;list-style:none}
 
       <article class="entry rv">
         <div>
-          <h3>M.S., Computer Science</h3>
+          <h3>Master of Computer Science</h3>
           <p class="org">University of Illinois Urbana-Champaign</p>
         </div>
         <div class="meta when">08/2022 &mdash; 12/2023</div>
@@ -576,7 +655,7 @@ ul{padding:0;list-style:none}
   <section class="contact" id="contact">
     <h2 class="display rv">Get in touch</h2>
     <div class="draw" style="height:1px;background:var(--bone);margin-top:32px"></div>
-    <p class="sub rv" style="--i:1">If you work on distillation, KV-cache compression, model merging, or anything where
+    <p class="sub rv" style="--i:1">If you work on on-policy distillation, KV-cache compression, or anything where
       knowledge from two models has to coexist, I would like to hear about it.</p>
     <p class="sub mailline rv" style="--i:2"><a class="mail" href="mailto:yipingli@ucmerced.edu">yipingli@ucmerced.edu</a></p>
   </section>
