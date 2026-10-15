@@ -302,7 +302,8 @@ ul{padding:0;list-style:none}
       <p class="rv" style="--i:1"><strong>Algorithms.</strong> How can AI become more capable? I study LLM
         post-training and multi-agent systems, including how models learn from teachers and how agents work together.</p>
       <p class="rv" style="--i:2"><strong>Efficient inference.</strong> How can we run AI faster and at lower cost?
-        I work on AI engine simulation and compressing the KV caches passed between agents.</p>
+        I work on sampling-driven GPU&ndash;memory co-simulation and chip design exploration,
+        alongside compression of the KV caches passed between agents.</p>
       <p class="rv" style="--i:3"><strong>AI for science.</strong> How can AI help solve scientific problems?
         My current work explores LLMs for quantum computing, including circuit synthesis and quantum reasoning.</p>
     </div>
@@ -506,9 +507,10 @@ ul{padding:0;list-style:none}
       <article class="entry rv">
         <div>
           <h3>Efficient Inference</h3>
-          <p class="org">AI engine simulation and KV-cache compression</p>
+          <p class="org">GPU&ndash;memory co-simulation, chip design exploration, and KV-cache compression</p>
           <ul>
-            <li><strong>AI engine simulation.</strong> I am working on simulation of AI inference engines.</li>
+            <li><strong>GPU&ndash;memory co-simulation.</strong> I am working on sampling-driven co-simulation
+              of GPUs and memory systems for chip design exploration.</li>
             <li><strong>Orthogonal BackFill (OBF).</strong> I developed a method to recover complementary
               information from discarded KV values and fold it into the cache passed to the next agent, without
               increasing the retained cache size.</li>
